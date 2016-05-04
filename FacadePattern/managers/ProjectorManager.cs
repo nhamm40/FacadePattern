@@ -1,16 +1,7 @@
-﻿namespace FacadePattern.classes
+﻿namespace FacadePattern.managers
 {
-    public class Projector
+    public class ProjectorManager : IProjectorManager
     {
-        public string Name { get; set; }
-        public DvdPlayer DvdPlayer { get; set; }
-
-        public Projector(string name, DvdPlayer dvdPlayer)
-        {
-            Name = name;
-            DvdPlayer = dvdPlayer;
-        }
-
         public string On()
         {
             return Name + " on\n";

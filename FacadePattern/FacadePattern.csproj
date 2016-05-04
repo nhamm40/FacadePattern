@@ -43,18 +43,34 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="classes\Amplifier.cs" />
-    <Compile Include="classes\DvdPlayer.cs" />
     <Compile Include="HomeTheaterFacade.cs" />
-    <Compile Include="classes\TheaterLights.cs" />
-    <Compile Include="classes\PopcornPopper.cs" />
-    <Compile Include="classes\Projector.cs" />
-    <Compile Include="classes\Screen.cs" />
+    <Compile Include="managers\AmplifierManager.cs" />
+    <Compile Include="managers\DvdPlayerManager.cs" />
+    <Compile Include="managers\IDvdPlayerManager.cs" />
+    <Compile Include="managers\IPopcornPopperManager.cs" />
+    <Compile Include="managers\IProjectorManager.cs" />
+    <Compile Include="managers\IScreenManager.cs" />
+    <Compile Include="managers\ITheaterLightsManager.cs" />
+    <Compile Include="managers\PopcornPopperManager.cs" />
+    <Compile Include="managers\ProjectorManager.cs" />
+    <Compile Include="managers\ScreenManager.cs" />
+    <Compile Include="managers\TheaterLightsManager.cs" />
+    <Compile Include="models\TheaterLights.cs" />
+    <Compile Include="models\PopcornPopper.cs" />
+    <Compile Include="models\Projector.cs" />
+    <Compile Include="models\Screen.cs" />
+    <Compile Include="managers\IAmplifierManager.cs" />
+    <Compile Include="models\Amplifier.cs" />
+    <Compile Include="models\DvdPlayer.cs" />
+    <Compile Include="models\HomeTheater.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="controllers\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

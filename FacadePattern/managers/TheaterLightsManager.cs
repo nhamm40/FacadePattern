@@ -1,14 +1,7 @@
-﻿namespace FacadePattern.classes
+﻿namespace FacadePattern.managers
 {
-    public class TheaterLights
+    public class TheaterLightsManager : ITheaterLightsManager
     {
-        private string Name { get; }
-
-        public TheaterLights(string name)
-        {
-            Name = name;
-        }
-
         public string On()
         {
             return Name + " on\n";

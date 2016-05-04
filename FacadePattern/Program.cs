@@ -1,5 +1,5 @@
 ﻿using System;
-using FacadePattern.classes;
+using FacadePattern.models;
 
 namespace FacadePattern
 {

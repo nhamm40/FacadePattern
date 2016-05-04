@@ -1,14 +1,7 @@
-﻿namespace FacadePattern.classes
+﻿namespace FacadePattern.managers
 {
-    public class Screen
+    class ScreenManager : IScreenManager
     {
-        public string Name { get; set; }
-
-        public Screen(string name)
-        {
-            Name = name;
-        }
-
         public string Up()
         {
             return Name + " going up\n";
